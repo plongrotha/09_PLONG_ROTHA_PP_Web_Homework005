@@ -1,5 +1,4 @@
-import React from "react";
-
+"use client ";
 export default function SearchCompoent() {
   return (
     <div className="flex justify-center items-center ">
