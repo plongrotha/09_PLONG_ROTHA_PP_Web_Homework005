@@ -1,14 +1,13 @@
-"use client";
 import { BookMarked, House, Laugh } from "lucide-react";
 import React from "react";
 import { listsidebar } from "../data/listSidebar";
-
+import Link from "next/link";
 export default function SideBarComponent() {
   return (
-    <div className="border-2 p-2">
+    <div className="border-2">
       <div className="flex justify-center">
         <img
-          className="rounded-full flex align-center justify-center"
+          className="rounded-full flex align-center"
           src={
             "https://i.pinimg.com/736x/64/72/02/647202351e78bf35105d14e92e465875.jpg"
           }
@@ -23,20 +22,20 @@ export default function SideBarComponent() {
 
       <div className="flex flex-col w-64 h-screen justify-center items-center bg-gray-200">
         <ul className="cursor-pointer ">
-          <Link>
+          <Link href="/">
             <li className="p-2 flex gap-2 text-red-500 hover:bg-gray-300 rounded-md">
               <House />
               Home
             </li>
           </Link>
 
-          <Link>
+          <Link href="/book">
             <li className="p-2 flex gap-2 text-red-500 hover:bg-gray-300 rounded-md">
               <BookMarked /> Book Categories
             </li>
           </Link>
 
-          <Link>
+          <Link href="/old-school-cartoon">
             <li className="p-2 flex gap-2 text-red-500 hover:bg-gray-300 rounded-md">
               <Laugh /> Old-SchoolCartoon
             </li>
